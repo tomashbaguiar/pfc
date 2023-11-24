@@ -1,0 +1,16 @@
+{
+{{#each this}}
+    {{#if ./sensor0}}
+    "temp0": {{./sensor0.field}}{{#unless @last}},{{/unless}}
+    {{/if}}
+    {{#if ./sensor1}}
+    "temp1": {{./sensor1.field}}{{#unless @last}},{{/unless}}
+    {{/if}}
+    {{#if ./sensor2}}
+    "temp2": {{./sensor2.field}}{{#unless @last}},{{/unless}}
+    {{/if}}
+    {{#if ./sensor3}}
+    "temp3": {{./sensor3.field}}{{#unless @last}},{{/unless}}
+    {{/if}}
+{{/each}}
+}
